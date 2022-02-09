@@ -33,8 +33,6 @@ export default {
     return {
       preview: null,
       image: null,
-      _list: [],
-      image_list: [],
       fileInputKey: 0
     }
   },
@@ -54,8 +52,7 @@ export default {
       var a = document.createElement('a')
       this.preview = a.href = window.URL.createObjectURL(blobFile)
     },
-    onQuitDraw (a) {
-
+    onQuitDraw () {
     },
     previewImage(event) {
       var input = event.target;
@@ -71,8 +68,6 @@ export default {
     reset() {
       this.image = null;
       this.preview = null;
-      this.image_list = [];
-      this.preview_list = [];
       this.clear()
     },
     clear() {
