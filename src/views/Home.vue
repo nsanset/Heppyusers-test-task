@@ -1,17 +1,19 @@
 <template>
   <div class="home">
-    <cropImage/>
+<!--     <cropImage/> -->
+    <test/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import cropImage from '@/components/cropImage.vue'
-
+// import cropImage from '@/components/cropImage.vue'
+import test from '@/components/test.vue'
 export default {
   name: 'Home',
   components: {
-    cropImage
+    // cropImage, 
+    test
   }
 }
 </script>

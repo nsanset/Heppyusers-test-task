@@ -31,14 +31,22 @@ export default {
   },
   data() {
     return {
+      cropImage: '',
       preview: null,
       image: null,
       fileInputKey: 0
     }
   },
   computed: {
+    // return require = (this.preview);
     coverUri() {
       return require = (this.preview);
+      // if (this.cropImage) {
+      //   return require = (this.preview);
+      // }
+      // else {
+      //   return require = (this.cropImage);
+      // }
     }
   },
   methods: {
@@ -49,6 +57,7 @@ export default {
       a.click()
     },
     onCopyImage (blobFile) {
+      this.preview = null;
       var a = document.createElement('a')
       this.preview = a.href = window.URL.createObjectURL(blobFile)
     },
@@ -61,7 +70,6 @@ export default {
         reader.onload = (e) => {
           this.preview = e.target.result;
         }
-        this.image=input.files[0];
         reader.readAsDataURL(input.files[0]);
       }
     },
