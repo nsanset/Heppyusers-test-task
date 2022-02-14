@@ -6,8 +6,7 @@
 
 <script>
 // @ is an alias to /src
-// import cropImage from '@/components/cropImage.vue'
-import test from '@/components/test.vue'
+import cropImage from '@/components/cropImage.vue'
 export default {
   name: 'Home',
   components: {
