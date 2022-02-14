@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-<!--     <cropImage/> -->
-    <test/>
+    <cropImage/>
   </div>
 </template>
 
@@ -12,8 +11,7 @@ import test from '@/components/test.vue'
 export default {
   name: 'Home',
   components: {
-    // cropImage, 
-    test
+    cropImage
   }
 }
 </script>
